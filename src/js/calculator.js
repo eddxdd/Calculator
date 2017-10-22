@@ -22,7 +22,7 @@ $(document).ready(function () {
     }
 
     // Check if last input was an operator ++ -- **
-    else if(operator1.includes(inputVal[inputVal.length-1] === false)) {
+    else if(operator1.includes(inputVal[inputVal.length-1]) === false) {
       inputVal.push(value);
     }
     else if(nums.includes(Number(value))) {
@@ -34,7 +34,7 @@ $(document).ready(function () {
   // This function will update the display everytime we input a new key
   function update() {
     totalValue = inputVal.join("");
-    $("#steps").html(totalString);
+    $("#steps").html(totalValue);
     console.log(inputVal);
   }
 
@@ -57,7 +57,7 @@ $(document).ready(function () {
       getTotal();
     }
     else {
-      if(inputVal[inputVal.length-1].indexOf("%", "/", "*", "+", "-", "-1") === -1){
+      if(inputVal[inputVal.length-1].indexOf("%", "/", "*", "+", "-", ".") === -1){
         getValue(this.id);
       }
       else {
