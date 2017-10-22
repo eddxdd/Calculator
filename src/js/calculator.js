@@ -3,7 +3,7 @@ $(document).ready(function () {
   var inputVal = [""];
   var totalValue;
 
-  // Operators validation
+  // Operators 
   var operator1 = ["%", "/", "*", "+", "-"];
   var operator2 = ["."];
   var nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
