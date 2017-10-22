@@ -2,4 +2,4 @@
 
 * A calculator created using JavaScript.
 
-// Work in progress.
+// Works but need to finish CSS
