@@ -45,15 +45,15 @@ $(document).ready(function () {
 
   $("a").on("click", function() { // Make buttons do stuff
 
-    if(this.id==="delAll") {
+    if(this.id === "delAll") {
       inputVal = [""];
       update(); // Delete all inputs and update to most recent
     }
-    else if(this.id==="delOne") {
+    else if(this.id === "delOne") {
       inputVal.pop();
       update();
     }
-    else if(this.id==="total") {
+    else if(this.id === "total") {
       getTotal();
     }
     else {
