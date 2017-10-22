@@ -1,0 +1,57 @@
+<html>
+<head>
+  <meta charset = "utf-8">
+  <meta name="author" content="Eduardo Lemos">
+  <title>Calculator</title>
+  <!-- stylesheets -->
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<!--body start-->
+  <body>
+    <div class="container text-center">
+      <h1>Online Calculator</h1>
+      <div id="result">
+        <span id="steps">0</span>
+      <hr/>
+      </div>
+
+      <div id="calc-container">
+        <form name="calculator">
+          <a class="btn btn-danger" id="delAll">AC</a>
+          <a class="btn btn-danger" id="delOne">DEL</a>
+          <a class="btn btn-primary" id="%">%</a>
+          <a class="btn btn-primary" id="/">/</a>
+          <br/>
+          <a class="btn btn-primary" id="7">7</a>
+          <a class="btn btn-primary" id="8">8</a>
+          <a class="btn btn-primary" id="9">9</a>
+          <a class="btn btn-primary" id="*">*</a>
+          <br/>
+          <a class="btn btn-primary" id="4">4</a>
+          <a class="btn btn-primary" id="5">5</a>
+          <a class="btn btn-primary" id="6">6</a>
+          <a class="btn btn-primary" id="-">-</a>
+          <br/>
+          <a class="btn btn-primary" id="1">1</a>
+          <a class="btn btn-primary" id="2">2</a>
+          <a class="btn btn-primary" id="3">3</a>
+          <a class="btn btn-primary" id="+">+</a>
+          <br/>
+          <a class="btn btn-primary" id=".">.</a>
+          <a class="btn btn-primary" id="0">0</a>
+          <a class="btn btn-primary bigButton" id="total">=</a>
+
+        </form>
+      </div>
+
+
+      <footer>
+        <p>Designed and developed by Eduardo Lemos &copy; 2017</p>
+      </footer>
+    </div>
+
+    <script src="./js/calculator.js"></script>
+  </body>
+</html>
