@@ -2,4 +2,6 @@
 
 * A calculator created using JavaScript.
 
-// Needs to finish CSS and some other minor adjustments
+// Working on design
+
+// Working on some JS adjustments
