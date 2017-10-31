@@ -1,5 +1,11 @@
+// Global
 body {
-  margin: auto; }
+  margin: auto;
+}
+
+.wrapper {
+  background-color: #16aabb;
+}
 
 #result {
   width: 250px;
@@ -10,7 +16,9 @@ body {
   border-top-left-radius: 15em;
   border-top-right-radius: 15em;
   overflow: hidden;
-  background-color: #222; }
+  background-color: #222;
+  box-shadow: 0 50px 100px rgba(50,50,93,.05), 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.1);
+}
 
 #steps {
   font-size: 3em;
@@ -19,7 +27,8 @@ body {
   padding-left: 15em;
   padding-right: 5px;
   margin-right: 60px;
-  float: right; }
+  float: right;
+}
 
 #calc-container {
   font-size: 5px;
@@ -31,18 +40,27 @@ body {
   margin-right: auto;
   border: 1px solid;
   border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px; }
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 50px 100px rgba(50,50,93,.05), 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.1);
+}
 
 a {
   width: 2.5vw;
   height: 2.5vw;
   margin-top: 2px;
-  border: 2px solid; }
+  border: 2px solid;
+}
+
+.btn {
+  .btn-primary {
+    border: 2px solid white;
+  }
+}
 
 .bigButton {
-  width: 98px; }
+  width: 98px;
+}
 
 footer {
-  margin-top: 20px; }
-
-/*# sourceMappingURL=index.css.map */
+  margin-top: 20px;
+}
