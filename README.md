@@ -2,6 +2,8 @@
 
 * A calculator created using JavaScript. The main focus of this project is to build a better foundation in JavaScript.
 
-// Working on design
+* Calculator working
 
-// Working on some JS adjustments
+// Working on re-design
+
+// Working on some JS adjustments and new features
