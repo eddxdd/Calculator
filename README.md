@@ -1,6 +1,6 @@
 # Calculator
 
-* A calculator created using JavaScript. The main focus of this project is to build a better foundation in JavaScript.
+* A calculator created using JavaScript. The main focus of this project is for me to build a better foundation in JavaScript.
 
 * Calculator working
 
