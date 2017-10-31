@@ -9,8 +9,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   border: 2px solid;
-  border-top-left-radius: 25em;
-  border-top-right-radius: 3em;
+  border-top-left-radius: 15em;
+  border-top-right-radius: 15em;
   overflow: hidden;
   background-color: #222;
 }
@@ -19,8 +19,10 @@ body {
   font-size: 3em;
   color: #fff;
   background-color: #222;
-  padding-left: 150px;
+  padding-left: 15em;
   padding-right: 5px;
+  margin-right: 60px;
+  float: right;
 }
 
 #calc-container {
