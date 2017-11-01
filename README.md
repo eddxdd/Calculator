@@ -2,7 +2,7 @@
 
 * A calculator created using JavaScript. The main focus of this project is for me to build a better foundation in JavaScript.
 
-* https://eddxdd.github.io/JS-Calculator/
+* https://eddxdd.github.io/Calculator/
 
 // Working on re-design
 
