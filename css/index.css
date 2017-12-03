@@ -1,60 +1,130 @@
-// Global
-body {
-  margin: auto;
-}
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-text-size-adjust: none; }
 
-.wrapper {
-  background-color: #16aabb;
-}
-
-#result {
-  width: 250px;
-  height: 55px;
-  margin-left: auto;
-  margin-right: auto;
-  border: 2px solid;
-  border-top-left-radius: 15em;
-  border-top-right-radius: 15em;
-  overflow: hidden;
-  background-color: #222;
-  box-shadow: 0 50px 100px rgba(50,50,93,.05), 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.1);
-}
-
-#steps {
-  font-size: 3em;
-  color: #fff;
-  background-color: #222;
-  padding-left: 15em;
-  padding-right: 5px;
-  margin-right: 60px;
-  float: right;
-}
-
-#calc-container {
-  font-size: 5px;
-  width: 250px;
-  background-color: #2c3e50;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  box-shadow: 0 50px 100px rgba(50,50,93,.05), 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.1);
-}
-
-a {
-  width: 2.5vw;
-  height: 2.5vw;
-  margin-top: 2px;
-  border: 2px solid;
-}
-
-.bigButton {
-  width: 98px;
-}
+body, ul, li, div, img {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0; }
 
 footer {
-  margin-top: 20px;
-}
+  text-align: center;
+  margin: auto; }
+
+.selected {
+  background: #444; }
+
+body, html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility; }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 85vh;
+  margin: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  box-shadow: 0 50px 100px rgba(50, 50, 93, 0.05), 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .wrapper .display {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 36;
+    z-index: 1;
+    padding-right: 26px;
+    padding-left: 26px;
+    overflow: hidden;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2); }
+    .wrapper .display .expression {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      flex: 65;
+      padding-bottom: 20px;
+      font-size: 60px; }
+    .wrapper .display .result {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      flex: 35;
+      font-size: 6rem;
+      color: #909090; }
+  .wrapper .pad {
+    display: flex;
+    flex-direction: row;
+    flex: 64;
+    color: white; }
+    .wrapper .pad .basic-pad {
+      display: flex;
+      flex-direction: row;
+      flex: 95; }
+      .wrapper .pad .basic-pad .numpad {
+        display: flex;
+        flex-direction: column;
+        flex: 3;
+        background-color: #434343;
+        font-size: 34px; }
+        .wrapper .pad .basic-pad .numpad .row {
+          display: flex;
+          flex-direction: row;
+          flex: 1; }
+          .wrapper .pad .basic-pad .numpad .row .button {
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #636363;
+            border-radius: 2px; }
+      .wrapper .pad .basic-pad .operators {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        background-color: #636363;
+        font-size: 22px; }
+        .wrapper .pad .basic-pad .operators #del {
+          font-size: 16px; }
+        .wrapper .pad .basic-pad .operators #clr {
+          display: none;
+          font-size: 16px; }
+        .wrapper .pad .basic-pad .operators .button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex: 1; }
+    .wrapper .pad .right-pad {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 5;
+      background-color: #16aabb;
+      color: #fff; }
+
+@media only screen and (max-width: 850px) {
+  body .wrapper {
+    margin: auto;
+    width: 100vw; }
+    body .wrapper .display .result {
+      font-size: 3rem; }
+  body footer {
+    margin-top: 15px; } }
+
+/*# sourceMappingURL=index.css.map */
