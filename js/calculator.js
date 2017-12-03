@@ -1,5 +1,5 @@
 var result = document.querySelector(".result");
-    var btns = document.querySelector(".pad");
+    var btns = document.querySelector(".buttons");
     var ops = document.querySelectorAll(".operator");
     var clearToggle = false;
     var timeFlag = false;
@@ -36,11 +36,6 @@ var result = document.querySelector(".result");
                         timeFlag = true;
                         return;
                     }
-                }else if(btn.innerHTML === '%'){
-                    resultValue = parseFloat(resultValue/100);
-                   // valStack.push(resultValue);
-                    result.innerHTML = resultValue;
-                    return;
                 }
 
                 if(valStack.length > 1){
